@@ -394,11 +394,11 @@ bool IsSafeToRunGuidedMissileScript()
         return false;
     }
 
-    if (!PAD::IS_CONTROL_ENABLED(2, eControl::ControlFrontendPauseAlternate)) // Check if any in-game menu is open (this may have false positives)
+    /*if (!PAD::IS_CONTROL_ENABLED(2, eControl::ControlFrontendPauseAlternate)) // Check if any in-game menu is open (this may have false positives)
     {
         LOG("Not safe to run the guided missile script, an in-game menu is probably active.");
         return false;
-    }
+    }*/
 
     if (HUD::IS_PAUSE_MENU_ACTIVE())
     {
